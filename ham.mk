@@ -286,6 +286,10 @@ PRODUCT_PACKAGES += \
 RODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/vendor/etc/permissions/com.dsi.ant.antradio_library.xml
 
+# Enable Quick Charge 2.0
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.usb.hvdcp.detect=true
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
