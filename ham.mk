@@ -150,7 +150,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8974
+    android.hardware.light@2.0-service.ham
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \

@@ -49,10 +49,6 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl
-
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
