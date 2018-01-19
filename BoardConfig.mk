@@ -147,6 +147,9 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/compatibility_matrix.xml
 
+# Exclude serif fonts for saving system.img size.
+EXCLUDE_SERIF_FONTS 	:= true
+
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_WLAN_DEVICE                := qcwcn
