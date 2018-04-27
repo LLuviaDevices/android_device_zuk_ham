@@ -44,6 +44,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl
 
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.0 \
+    libandroid_net \
+    netutils-wrapper-1.0
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl
