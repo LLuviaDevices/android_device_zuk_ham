@@ -104,9 +104,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8974 \
     camera.ham \
-    libstlport \
-    Snap \
-    ParanoidCamera
+    libstlport 
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
@@ -227,6 +225,14 @@ PRODUCT_COPY_FILES += \
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8974
+
+
+# RCS
+PRODUCT_PACKAGES += \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
 
 # VR
 PRODUCT_PACKAGES += \
