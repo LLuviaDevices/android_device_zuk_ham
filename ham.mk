@@ -103,10 +103,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DeviceSettings
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    HamPocketMode
-
 # VNDK-SP:
 PRODUCT_PACKAGES += \
    vndk-sp
