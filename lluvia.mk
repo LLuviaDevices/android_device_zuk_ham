@@ -1,5 +1,6 @@
 # Copyright (C) 2015 The CyanogenMod Project
 #           (C) 2017 The LineageOS Project
+#           (C) 2018 The LLuviaOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,8 +24,7 @@ PRODUCT_COPY_FILES += device/zuk/ham/apns-full-conf.xml:system/etc/apns-conf.xml
 $(call inherit-product, device/zuk/ham/ham.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
-$(call inherit-product, vendor/lluvia/config/caf_fw.mk)
+$(call inherit-product, vendor/lluvia/config/common.mk)
 
 PRODUCT_NAME := lluvia_ham
 PRODUCT_DEVICE := ham
