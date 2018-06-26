@@ -1,10 +1,10 @@
 [
  {
   "repository": "android_kernel_cyanogen_msm8974",
-  "target_path": "kernel/cyanogen/msm8974",
+  "target_path": "kernel/cyanogen/msm8974"
  },
  {
   "repository": "proprietary_vendor_zuk_ham",
-  "target_path": "vendor/zuk",
+  "target_path": "vendor/zuk"
  }
 ]
