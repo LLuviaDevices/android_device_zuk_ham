@@ -1,14 +1,10 @@
 [
  {
-  "remote": "LLuviaDevices",
-  "repository": "kernel_cyanogen_msm8974",
+  "repository": "android_kernel_cyanogen_msm8974",
   "target_path": "kernel/cyanogen/msm8974",
-  "branch": "8.1"
  },
  {
-  "remote": "LLuviaDevices",
-  "repository": "vendor_zuk_ham",
+  "repository": "proprietary_vendor_zuk_ham",
   "target_path": "vendor/zuk",
-  "branch": "8.1"
- },
+ }
 ]
