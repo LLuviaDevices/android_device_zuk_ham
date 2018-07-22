@@ -24,7 +24,8 @@ PRODUCT_COPY_FILES += device/zuk/ham/apns-full-conf.xml:system/etc/apns-conf.xml
 $(call inherit-product, device/zuk/ham/ham.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lluvia/config/common.mk)
+$(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
+$(call inherit-product, vendor/lluvia/config/caf_fw.mk)
 
 PRODUCT_NAME := lluvia_ham
 PRODUCT_DEVICE := ham
