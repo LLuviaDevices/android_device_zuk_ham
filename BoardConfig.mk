@@ -17,8 +17,9 @@
 
 DEVICE_PATH := device/zuk/ham
 
-# TODO: shouldn't be here
+# FOr treble
 BOARD_VENDOR := zuk
+TARGET_COPY_OUT_VENDOR := vendor
 
 #Include path
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
