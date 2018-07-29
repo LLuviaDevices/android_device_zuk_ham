@@ -1,8 +1,22 @@
 #
 # system.prop for ham
 #
-
+# general
 ro.sf.lcd_density=420
+persist.hwc.mdpcomp.enable=true 
+persist.timed.enable=true 
+ro.opengles.version=196610 
+ro.qualcomm.bt.hci_transport=smd 
+ro.telephony.default_network=9 
+ro.use_data_netmgrd=true 
+persist.data.netmgrd.qos.enable=true 
+persist.data.tcpackprio.enable=true 
+ro.data.large_tcp_window_size=true 
+telephony.lteOnCdmaDevice=1 
+wifi.interface=wlan0 
+ro.qualcomm.perf.cores_online=2 
+ro.vendor.extension_library=libqti-perfd-client.so 
+ro.telephony.call_ring.multiple=0
 
 # Perf
 ro.qualcomm.perf.cores_online=2
@@ -28,6 +42,10 @@ ro.bluetooth.sap=false
 
 # Camera
 persist.camera.HAL3.enabled=1
+camera2.portability.force_api=1
+persist.media.treble_omx=false 
+camera.disable_treble=true 
+persist.camera.4k2k.enable=1
 
 # DRM
 drm.service.enabled=true
@@ -44,6 +62,13 @@ ro.config.vc_call_vol_steps=8
 ro.config.media_vol_steps=20
 mm.enable.smoothstreaming=true
 media.aac_51_output_enabled=true
+use.dedicated.device.for.voip=true 
+audio_hal.period_size=192 
+mm.enable.smoothstreaming=true 
+av.streaming.offload.enable=true 
+tunnel.audio.encode=true 
+audio.offload.pcm.16bit.enable=true 
+audio.offload.pcm.24bit.enable=true
 
 # Network
 persist.data.qmi.adb_logmask=0
