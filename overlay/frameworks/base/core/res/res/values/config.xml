@@ -292,5 +292,5 @@
     <bool name="config_enableSmartPixels">true</bool>
 
     <!-- Whether to enable HumanInteractionController by default -->
-    <bool name="config_HICEnabledDefault">false</bool>
+    <!-- bool name="config_HICEnabledDefault">false</bool -->
 </resources>
