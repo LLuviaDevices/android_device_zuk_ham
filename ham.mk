@@ -299,10 +299,6 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
-# Enable Bluetooth HFP
-PRODUCT_PROPERTY_OVERRIDES += \
-    bluetooth.hfp.client=1
-
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 
