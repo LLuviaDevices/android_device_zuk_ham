@@ -226,7 +226,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     keystore.msm8974
 
-
 # RCS
 PRODUCT_PACKAGES += \
     rcs_service_aidl \
@@ -250,6 +249,10 @@ PRODUCT_PACKAGES += \
 # Data
 PRODUCT_PACKAGES += \
     librmnetctl
+
+# Power
+PRODUCT_PACKAGES += \
+    power.msm8974
 
 # Thermal config
 PRODUCT_COPY_FILES += \
