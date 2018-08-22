@@ -113,10 +113,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 PRODUCT_PACKAGES += \
     charger_res_images
 
-#Doze
-PRODUCT_PACKAGES += \
-    HamDoze
-
 # Gestures and Glove mode package
 PRODUCT_PACKAGES += \
     DeviceSettings
