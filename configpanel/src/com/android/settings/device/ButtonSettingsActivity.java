@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
  *           (C) 2017 The LineageOS Project
+ *           (C) 2018 The LLuvia Open Source
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.device;
+package com.android.settings.device;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;

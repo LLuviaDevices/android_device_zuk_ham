@@ -19,7 +19,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
 
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    org.lineageos.platform.internal
+    com.android.internal
 
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res \

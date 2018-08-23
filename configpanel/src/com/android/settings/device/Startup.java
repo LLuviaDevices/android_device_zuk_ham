@@ -1,6 +1,7 @@
 /*
- * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2016 The cyanogenmod Project
  *           (C) 2017 The LineageOS Project
+ *           (c) 2018 The LLuvia Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.device;
+package com.android.settings.device;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -24,7 +25,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.util.Log;
 
-import org.cyanogenmod.internal.util.FileUtils;
+import com.android.internal.util.FileUtils;
 
 public class Startup extends BroadcastReceiver {
 
@@ -114,7 +115,7 @@ public class Startup extends BroadcastReceiver {
             boolean enable) {
         PendingIntent pendingIntent = null;
         if (enable) {
-            Intent doubleTapIntent = new Intent("cyanogenmod.intent.action.GESTURE_CAMERA", null);
+            Intent doubleTapIntent = new Intent("android.intent.action.GESTURE_CAMERA", null);
             pendingIntent = PendingIntent.getBroadcastAsUser(
                     context, 0, doubleTapIntent, 0, UserHandle.CURRENT);
         }
