@@ -172,11 +172,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# Lineage Hardware
+# LLuvia Hardware
 BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lluviahw
-
-# Hardware
-BOARD_USES_CYANOGEN_HARDWARE := true
 
 # Offmode Charging
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/zuk/ham/charger/images
@@ -215,9 +212,6 @@ PROTOBUF_SUPPORTED := true
 
 # ANT+ - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
-
-# Missing Dependencies
-ALLOW_MISSING_DEPENDENCIES=true
 
 #Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)

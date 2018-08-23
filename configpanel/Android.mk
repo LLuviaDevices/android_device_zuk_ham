@@ -18,9 +18,6 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-support-v14-preference \
 
 
-LOCAL_STATIC_JAVA_LIBRARIES := \
-    com.android.internal
-
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res \
     $(TOP)/packages/resources/devicesettings/res
