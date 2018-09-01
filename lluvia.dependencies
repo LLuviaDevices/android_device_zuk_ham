@@ -1,7 +1,8 @@
 [
  {
-  "repository": "android_kernel_cyanogen_msm8974",
-  "target_path": "kernel/cyanogen/msm8974"
+  "repository": "Ram9199/Trueno",
+  "target_path": "kernel/cyanogen/msm8974",
+  "branch": "Trueno-1.x"
  },
  {
   "repository": "proprietary_vendor_zuk_ham",
