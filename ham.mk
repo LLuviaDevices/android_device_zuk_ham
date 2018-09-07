@@ -85,7 +85,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
      audio.offload.buffer.size.kb=32 \
      audio.deep_buffer.media=true \
      audio.offload.video=true \
-     av.streaming.offload.enable=true \
+     audio.offload.disable=true \
      audio.offload.multiple.enabled=false \
      audio.offload.gapless.enabled=true \
      tunnel.audio.encode=true \
@@ -236,6 +236,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vr.high_performance.xml:system/vendor/etc/permissions/android.hardware.vr.high_performance.xml
 
+# Telephony-ext
+PRODUCT_PACKAGES += \
+    qti-telephony-common \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
@@ -349,9 +357,6 @@ PRODUCT_PACKAGES += \
 
 # call dalvik heap config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
-
-# call hwui memory config
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/zuk/ham/ham-vendor.mk)
