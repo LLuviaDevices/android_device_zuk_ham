@@ -199,9 +199,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw \
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.media.treble_omx=false
-
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy \
