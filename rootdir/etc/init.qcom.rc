@@ -24,6 +24,8 @@ on early-init
 
 on init
 
+    start program_bdaddr
+
 on early-boot
     # Set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -338,3 +340,9 @@ service fuse_usbdisk /vendor/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw
 
 on property:apexd.status=ready
     mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
+
+service program_bdaddr /system/vendor/bin/init.program_bdaddr.sh
+    user bluetooth
+    group bluetooth
+    disabled
+    oneshot
