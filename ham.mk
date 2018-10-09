@@ -199,9 +199,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.media.treble_omx=false \
-    camera.disable_treble=true \
-    persist.camera.4k2k.enable=1
+    persist.media.treble_omx=false
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
