@@ -176,7 +176,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_PROVIDES_LIBLIGHT := true
 
 # LLuvia Hardware
-BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lluviahw
+JAVA_SOURCE_OVERLAYS := $(DEVICE_PATH)/lluviahw|**/*.java
 
 # Offmode Charging
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/zuk/ham/charger/images
