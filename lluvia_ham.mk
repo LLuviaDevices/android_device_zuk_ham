@@ -26,6 +26,11 @@ $(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Use Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm
+IS_PHONE := true
+
 PRODUCT_NAME := lluvia_ham
 PRODUCT_DEVICE := ham
 PRODUCT_MANUFACTURER := ZUK
