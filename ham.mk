@@ -120,8 +120,8 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
+#PRODUCT_PACKAGES += \
+#    ConfigPanel
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
