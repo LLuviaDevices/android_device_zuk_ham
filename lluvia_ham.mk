@@ -23,6 +23,11 @@ $(call inherit-product, device/zuk/ham/ham.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
 
+# Use Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm
+IS_PHONE := true
+
 PRODUCT_NAME := lluvia_ham
 PRODUCT_DEVICE := ham
 PRODUCT_MANUFACTURER := ZUK
