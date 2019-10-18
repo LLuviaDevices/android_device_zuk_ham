@@ -1,6 +1,6 @@
 /*
- * Copyright (C) 2015-2016 The CyanogenMod Project
- *           (C) 2017-2018 The LineageOS Project
+ * Copyright (C) 2016 The CyanogenMod Project
+ *           (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.util.Log;
 
-import org.lineageos.internal.util.FileUtils;
+import org.lineageos.settings.device.util.FileUtils;
 
 public class Startup extends BroadcastReceiver {
 
@@ -33,7 +33,8 @@ public class Startup extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         final String action = intent.getAction();
-        if (lineageos.content.Intent.ACTION_INITIALIZE_LINEAGE_HARDWARE.equals(action)) {
+        if  (Intent.ACTION_BOOT_COMPLETED.equals(action)
+                || Intent.ACTION_PRE_BOOT_COMPLETED.equals(action)) {
 
             // Disable button settings if needed
             if (!hasButtonProcs()) {

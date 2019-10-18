@@ -1,6 +1,6 @@
 /*
- * Copyright (C) 2015-2016 The CyanogenMod Project
- *           (C) 2017-2018 The LineageOS Project
+ * Copyright (C) 2016 The CyanogenMod Project
+ *           (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,17 +18,20 @@
 package org.lineageos.settings.device;
 
 import android.os.Bundle;
-import androidx.preference.ListPreference;
-import androidx.preference.Preference;
-import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
+import android.support.v14.preference.PreferenceFragment;
+import android.support.v14.preference.SwitchPreference;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
-import org.lineageos.internal.util.FileUtils;
+import com.android.settingslib.drawer.SettingsDrawerActivity;
+
+import org.lineageos.settings.device.util.FileUtils;
 
 public class ButtonSettingsFragment extends PreferenceFragment
-        implements Preference.OnPreferenceChangeListener {
+        implements OnPreferenceChangeListener {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {

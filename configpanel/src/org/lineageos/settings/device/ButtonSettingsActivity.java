@@ -1,6 +1,6 @@
 /*
- * Copyright (C) 2015-2016 The CyanogenMod Project
- *           (C) 2017-2018 The LineageOS Project
+ * Copyright (C) 2016 The CyanogenMod Project
+ *           (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,15 +17,18 @@
 
 package org.lineageos.settings.device;
 
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 
-public class ButtonSettingsActivity extends PreferenceActivity {
+import com.android.settingslib.drawer.SettingsDrawerActivity;
+
+public class ButtonSettingsActivity extends SettingsDrawerActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
                 new ButtonSettingsFragment()).commit();
     }
 }
